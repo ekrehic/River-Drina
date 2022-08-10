@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;600;800&display=swap');
+@charset "UTF-8";
+
+$body-font: 'Raleway', sans-serif;
+
+body, p {
+  color: #083C5A;
+  font-family: 'Raleway', sans-serif;
+}
+
+h1, h2, h3 {
+  color: #28B5B5;
+  font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+  font-size: 46px;
+
+  @media screen and (max-width: 760px)  {
+    font-size: 34px;
+  }
+}
+
+h2 {
+  font-size: 38px;
+}

@@ -1,0 +1,23 @@
+.button {
+  padding: 4px 20px;
+  border-radius: 80px;
+  color: #ffffff;
+  background: #28B5B5;
+  transition: all ease-out 400ms;
+  font-size: 18px;
+  text-transform: lowercase;
+  border: none;
+  outline: none;
+
+  &:hover {
+    color: #ffffff;
+    background: #8FD9A8;
+  }
+
+  &.is-hollow {
+    &.is-white {
+      border: 1px solid #fff;
+      background: transparent;
+    }
+  }
+}

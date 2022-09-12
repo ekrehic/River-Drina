@@ -17,24 +17,26 @@ import { Component } from 'vue-property-decorator';
 
 @Component
 class Features extends Vue {
-  features = [
-    {
-      name: 'feature',
-      icon: require('@/assets/images/RiverDrina_logo_plain.png'),
-    },
-    {
-      name: 'feature',
-      icon: require('@/assets/images/RiverDrina_logo_plain.png'),
-    },
-    {
-      name: 'feature',
-      icon: require('@/assets/images/RiverDrina_logo_plain.png'),
-    },
-    {
-      name: 'feature',
-      icon: require('@/assets/images/RiverDrina_logo_plain.png'),
-    },
-  ]
+  get features() {
+    return [
+      {
+        name: this.$t(`features.activities`),
+        icon: require('@/assets/images/RiverDrina_logo_plain.png'),
+      },
+      {
+        name: this.$t(`features.silence`),
+        icon: require('@/assets/images/RiverDrina_logo_plain.png'),
+      },
+      {
+        name: this.$t(`features.pool`),
+        icon: require('@/assets/images/RiverDrina_logo_plain.png'),
+      },
+      {
+        name: this.$t(`features.relaxation`),
+        icon: require('@/assets/images/RiverDrina_logo_plain.png'),
+      },
+    ];
+  }
 }
 
 export default Features;
@@ -42,6 +44,17 @@ export default Features;
 
 <style lang="scss">
 .features {
+
+  @media  screen and (min-width: 1024px){
+    .columns {
+      justify-content: space-between;
+
+      .column {
+        width: unset;
+      }
+    }
+  }
+
   .feature {
     display: flex;
     flex-direction: column;
@@ -50,6 +63,10 @@ export default Features;
 
     img {
       width: 180px;
+    }
+
+    h4 {
+      font-weight: 300;
     }
   }
 }

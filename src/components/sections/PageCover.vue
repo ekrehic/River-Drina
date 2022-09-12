@@ -1,5 +1,15 @@
 <template>
     <div class="cover">
+      <div class="cover__content section">
+        LOGO
+        <span class="is-block">
+          -
+        </span>
+        <h1 v-html="$t(`cover.text`)"></h1>
+        <button class="button is-large is-green">
+          {{ $t(`cover.cta`) }}
+        </button>
+      </div>
       <div class="wave"></div>
     </div>
 </template>
@@ -19,10 +29,31 @@ export default PageCover;
 <style lang="scss">
 .cover {
   position: relative;
-  height: 100vh;
+  height: calc(100vh - 92px);
   background-image: url("images/cover_bg_river-drina.jpeg");
   background-size: cover;
   background-position: center;
+
+  @media screen and (max-width: 1024px) {
+    height: calc(100vh - 70px);
+  }
+
+
+  .cover__content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+      color: #ffffff;
+      margin-bottom: 30px;
+      max-width: 1000px;
+      text-align: center;
+      font-size: 38px;
+    }
+  }
 }
 
 .wave {
@@ -42,8 +73,6 @@ export default PageCover;
   top:0;
   left:0;
   background-image: url('images/wave-animation.png');
-
-  //background-image: url('https://vitalflow.com.ar/img/anim-onda.png');
   opacity: 0.4;
   animation: anim-rev 10s linear infinite;
 
@@ -56,8 +85,6 @@ export default PageCover;
   top:0;
   left:0;
   background-image: url('images/wave-animation.png');
-
-  // background-image: url('https://vitalflow.com.ar/img/anim-onda.png');
   opacity: 0.6;
   animation-delay: -5s;
   animation: anim 20s linear infinite;
@@ -76,7 +103,7 @@ export default PageCover;
 @keyframes anim-rev {
   0%
   {
-    background-position: 1360;
+    background-position: 1360px;
   }
   100%
   {

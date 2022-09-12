@@ -21,7 +21,7 @@ export default new VueRouter({
             }
         },
         {
-            path: '/draft-landing-page',
+            path: '/landing-page-draft',
             name: 'LandingPage',
             component: LandingPage,
         },

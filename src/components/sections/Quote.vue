@@ -25,7 +25,7 @@ export default Quote;
 
 <style lang="scss">
 .quote_wrapper {
-  background: #D7D2BE;
+  background: #f4f0dd;
 }
 
 .quote {

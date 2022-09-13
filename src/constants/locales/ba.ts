@@ -39,8 +39,27 @@ const ba = {
     },
     quote: `<span class="has-text-weight-bold">River Drina</span> Apartments & Wellness osmišljen je da vas uvede u <span class="has-text-weight-bold">očaravajući odmor</span>`,
     wellness: {
-        title: 'Wellness & spa'
+        title: 'Wellness & spa',
+        text: `Kako bismo vam pružili potpuno luksuzno iskustvo opuštanja, u okviru kompleksa nalazi se wellness zona sa zatvorenim bazenom i slanom vodom koja je bogata terapeutskim svojstvima. `,
+        sauna: `Sauna`,
+        saunaText: `Wellness zona uključuje i finsku saunu, za koju se zna da ima pozitivan učinak na zdravlje i dobrobit. Boravak u sauni podstiče lijep izgled kože, lica, ali i cijelog tijela. Tokom korištenja saune mišići se opuštaju i poboljšava se opće psihofizičko stanje. Redovna upotreba poboljšava otpornost organizma, sagorijeva kalorije, ublažava stres i prirodno širi pore i znojenjem izbacuje prašinu, mrtvu kožu i toksine. Sauna u našoj wellness zoni izgrađena je od najkvalitetnijih materijala i nudi mogućnost uživanja za 4 osobe, pa ne čudi što je to jedan od omiljenih kutaka naših gostiju.`,
     },
+    pool: {
+        title: `Bazen`,
+        text: `Zahvaljujući svojoj jedinstvenoj lokaciji, bazen pruža jedinstvenu priliku da uživate u pogledu na Drinu u svim godišnjim dobima. Dimenzije bazena (<span class="has-text-weight-bold">11m x 4,5m</span>) sa postepenim povećanjem dubine od (<span class="has-text-weight-bold">1,35m - 1,95m</span>) i konstantnom temperaturom vode od <span class="has-text-weight-bold">29°C</span> pružaju potpuni užitak u plivanju tokom cijele godine, a efekti hidro-aero masaže i vodopad doprinose potpuno opuštanje, relaksiranje i masažu. Kako bi atmosfera bila potpuna, bazen je opremljen i modernim svjetlosnim efektima, kao i ležaljkama za odmor i opuštanje.
+Zahvaljujući najsavremenijim tehnologijama koje su prisutne u održavanju bazena, <span class="has-text-weight-bold">bazen sadrži slanu vodu</span> bez hlora, koja je pogodna za sve one koji su preosjetljivi na hlor, djecu, starije osobe, kao i one sa osjetljivim očima i sinusima, a prednosti ove vode su i za same kupače, višestruke.`,
+    },
+    location: {
+        title: `Lokacija`,
+        text: `River Drina Apartments & Wellness nalaze se na obali rijeke Drine i u neposrednoj blizini Bratunca. Najduži dio toka Drine prolazi upravo kroz opštinu Bratunac i na taj način doprinosi izuzetnoj ljepoti ovog kraja okruženog šumovitim brdima.
+        Zahvaljujući svojoj lokaciji u Bratuncu, sami River Drina Apartments & Wellness su pogodni za opuštajući odmor, ali i aktivnosti poput planinarenja, vožnje bicikla, ribolova i istraživanja ljepote obala Drine.
+        <span class="is-block">Svojim bogatstvom Drina nudi mogućnost vožnje čamcem, ali i uživanja u kupanju u ovom kraju pitome rijeke.</span>
+        Blizina važnih kulturnih destinacija zadovoljit će i one koji su željni aktivnog odmora i upoznavanja okružja u kojima provode svoj odmor.`,
+    },
+    contact: {
+        contactUs: `Kontaktiraj nas`,
+        bookNow: 'Bukiraj',
+    }
 }
 
 export default ba;

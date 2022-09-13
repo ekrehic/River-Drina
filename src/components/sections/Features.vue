@@ -1,7 +1,7 @@
 <template>
   <div class="section features">
-    <div class="columns">
-      <div v-for="f in features" :key="`feature-${f.name}`" class="column is-3">
+    <div class="columns is-mobile is-multiline">
+      <div v-for="f in features" :key="`feature-${f.name}`" class="column  is-6-touch is-3-desktop">
         <div class="feature">
           <img :src="f.icon" :alt="f.name">
           <h4 v-text="f.name"/>
@@ -21,19 +21,19 @@ class Features extends Vue {
     return [
       {
         name: this.$t(`features.activities`),
-        icon: require('@/assets/images/RiverDrina_logo_plain.png'),
+        icon: require('@/assets/images/features/outdoor_activities.png'),
       },
       {
         name: this.$t(`features.silence`),
-        icon: require('@/assets/images/RiverDrina_logo_plain.png'),
+        icon: require('@/assets/images/features/silence.png'),
       },
       {
         name: this.$t(`features.pool`),
-        icon: require('@/assets/images/RiverDrina_logo_plain.png'),
+        icon: require('@/assets/images/features/pool.png'),
       },
       {
         name: this.$t(`features.relaxation`),
-        icon: require('@/assets/images/RiverDrina_logo_plain.png'),
+        icon: require('@/assets/images/features/relaxation.png'),
       },
     ];
   }
@@ -45,7 +45,7 @@ export default Features;
 <style lang="scss">
 .features {
 
-  @media  screen and (min-width: 1024px){
+  @media  screen and (min-width: 1316px){
     .columns {
       justify-content: space-between;
 
@@ -62,11 +62,20 @@ export default Features;
     justify-content: center;
 
     img {
-      width: 180px;
+      width: 126px;
+
+      @media screen and (max-width: 768px) {
+        width: 120px;
+      }
+
+      @media screen and (max-width: 420px) {
+        width: 80px;
+      }
     }
 
     h4 {
       font-weight: 300;
+      text-align: center;
     }
   }
 }

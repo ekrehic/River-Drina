@@ -1,9 +1,9 @@
 <template>
   <div class="apartments">
-    <div class="apartments__navigation columns m-0">
+    <div class="apartments__navigation columns is-mobile m-0">
       <div
           v-for="apartment in apartments" :key="`apartment-nav-${apartment.id}`"
-          class="apartments__navigation__item column"
+          class="apartments__navigation__item column is-4"
           :style="`background: ${apartment.navigationBg}`"
       >
         <span class="apartment_nav_number">
@@ -90,7 +90,7 @@ class Apartments extends Vue {
       {
         id: 1,
         text: `${this.$t(`apartments.apartment`)} 1`,
-        color: '#D7D2BE',
+        color: '#f4f0dd',
         navigationBg: '#8FD9A8',
         cover: require('@/assets/images/apartments/apartment-1.jpg'),
         description: this.$t(`apartments.apartment1.description`),
@@ -108,7 +108,7 @@ class Apartments extends Vue {
       {
         id: 2,
         text: `${this.$t(`apartments.apartment`)} 2`,
-        color: '#b2b8ac',
+        color: '#EBE5D6',
         navigationBg: '#28B5B5',
         cover: require('@/assets/images/apartments/apartment-2.jpg'),
         description: this.$t(`apartments.apartment2.description`),
@@ -126,7 +126,7 @@ class Apartments extends Vue {
       {
         id: 3,
         text: `${this.$t(`apartments.apartment`)} 3`,
-        color: '#ddcc9b',
+        color: '#ECE2C6',
         navigationBg: '#4B778D',
         cover: require('@/assets/images/apartments/apartment-3.jpg'),
         description: this.$t(`apartments.apartment3.description`),
@@ -175,6 +175,10 @@ export default Apartments;
   .apartments__navigation {
     height: 180px;
 
+    @media screen and (max-width: 768px) {
+      height: 160px;
+    }
+
     .apartments__navigation__item {
       justify-content: center;
       align-items: center;
@@ -185,13 +189,18 @@ export default Apartments;
       .apartment_nav_number {
         position: absolute;
         font-size: 160px;
-        font-weight: 800;
-        opacity: 0.15;
+        font-weight: 900;
+        opacity: 0.1;
+        color: #000;
         display: flex;
         align-items: center;
         justify-content: center;
-        font-family: 'Ubuntu', sans-serif;
         z-index: 1;
+
+        @media screen and (max-width: 768px) {
+          font-size: 120px;
+        }
+
       }
 
       .apartment_nav_apartment {
@@ -200,6 +209,14 @@ export default Apartments;
         position: relative;
         z-index: 2;
         padding-top: 24px;
+
+        @media screen and (max-width: 768px) {
+          font-size: 22px;
+        }
+
+        @media screen and (max-width: 420px) {
+          font-size: 18px;
+        }
       }
 
       .nav-icon {
@@ -214,6 +231,10 @@ export default Apartments;
 
         &:hover {
           transform: scale(1.1);
+        }
+
+        @media screen and (max-width: 420px) {
+          transform: scale(0.9);
         }
       }
     }
@@ -252,12 +273,12 @@ export default Apartments;
         .apartment__title_number {
           position: absolute;
           font-size: 180px;
-          font-weight: 800;
-          opacity: 0.15;
+          font-weight: 900;
+          opacity: 0.1;
+          color: #000;
           display: flex;
           align-items: center;
           justify-content: center;
-          font-family: 'Ubuntu', sans-serif;
           z-index: 1;
         }
 
@@ -315,7 +336,7 @@ export default Apartments;
           transition: all 250ms ease;
 
           &:hover {
-            color: #8FD9A8;
+            color: #8fd9a8;
             border-color: #8FD9A8;
           }
         }

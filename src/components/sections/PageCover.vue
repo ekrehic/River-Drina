@@ -1,16 +1,15 @@
 <template>
     <div class="cover">
+      <div class="cover__bg"></div>
       <div class="cover__content section">
-        LOGO
-        <span class="is-block">
-          -
-        </span>
+        <img class="logo" src="@/assets/images/RiverDrina_text.png" alt="RIVER DRINA"/>
+        <img class="wave" src="@/assets/images/wave-yellow.png" alt="Yellow river drina wave"/>
         <h1 v-html="$t(`cover.text`)"></h1>
         <button class="button is-large is-green">
           {{ $t(`cover.cta`) }}
         </button>
       </div>
-      <div class="wave"></div>
+      <div class="waves-animation"></div>
     </div>
 </template>
 
@@ -29,15 +28,25 @@ export default PageCover;
 <style lang="scss">
 .cover {
   position: relative;
-  height: calc(100vh - 92px);
-  background-image: url("images/cover_bg_river-drina.jpeg");
-  background-size: cover;
-  background-position: center;
+  height: calc(100vh - 80px);
 
-  @media screen and (max-width: 1024px) {
-    height: calc(100vh - 70px);
+  .cover__bg {
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 80px);
+    background-image: url("images/River_Drina-cover.png");
+    background-size: cover;
+    background-position: center;
+
+    @media screen and (max-width: 1024px) {
+      height: calc(100vh - 56px);
+    }
+
   }
 
+  @media screen and (max-width: 1024px) {
+    height: calc(100vh - 56px);
+  }
 
   .cover__content {
     display: flex;
@@ -45,6 +54,39 @@ export default PageCover;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    z-index: 5;
+    position: relative;
+
+    .logo {
+      max-width: 800px;
+      margin-bottom: 20px;
+
+      @media screen and (max-width: 1316px) {
+        max-width: 600px;
+      }
+
+      @media screen and (max-width: 1024px) {
+        max-width: 400px;
+      }
+
+      @media screen and (max-width: 768px) {
+        max-width: 300px;
+      }
+
+      @media screen and (max-width: 420px) {
+        max-width: 100%;
+      }
+    }
+
+    .wave {
+      max-width: 100px;
+      margin-bottom: 40px;
+
+      @media screen and (max-width: 1024px) {
+        max-width: 60px;
+      }
+
+    }
 
     h1 {
       color: #ffffff;
@@ -52,20 +94,38 @@ export default PageCover;
       max-width: 1000px;
       text-align: center;
       font-size: 38px;
+      text-shadow: 1px 1px 1px #4B778D;
+
+      @media screen and (max-width: 1024px) {
+        font-size: 30px;
+      }
+
+      @media screen and (max-width: 768px) {
+        font-size: 26px;
+      }
+
+      @media screen and (max-width: 420px) {
+        font-size: 24px;
+      }
+    }
+
+    .button {
+      box-shadow: 0 0 4px #4B778D;
     }
   }
 }
 
-.wave {
+.waves-animation {
   position: absolute;
   width: 100%;
   height: 143px;/*PNG*/
-  bottom:0;
+  bottom: -5px;
   left:0;
   background-image: url('images/wave-animation.png');
+  //background-size: contain;
   animation: anim 10s linear infinite;
 }
-.wave:before{
+.waves-animation:before{
   content: '';
   position: absolute;
   width: 100%;
@@ -77,7 +137,7 @@ export default PageCover;
   animation: anim-rev 10s linear infinite;
 
 }
-.wave:after{
+.waves-animation:after{
   content: '';
   position: absolute;
   width: 100%;

@@ -2,8 +2,11 @@
   <div class="section about">
     <div class="columns is-multiline">
       <div class="column is-12 p-b-0">
-        <h2>
+        <h2 class="has-wave-right">
           {{ $t(`about.title`) }}
+          <span>
+            <img class="wave" src="@/assets/images/wave-yellow.png" alt="Yellow river drina wave"/>
+          </span>
         </h2>
       </div>
       <div class="column is-6">

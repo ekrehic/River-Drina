@@ -26,7 +26,12 @@
     padding: 4px 38px;
     font-weight: 800;
     font-size: 28px;
-    height: 60px;
+    height: 54px;
+
+    @media screen and (max-width: 768px) {
+      font-size: 24px;
+      height: 42px;
+    }
   }
 
   &.is-hollow {

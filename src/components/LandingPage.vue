@@ -7,6 +7,10 @@
     <apartments/>
     <quote/>
     <wellness/>
+    <pool/>
+    <location/>
+    <contact/>
+    <page-footer/>
   </div>
 
 </template>
@@ -15,12 +19,16 @@
 import Vue from 'vue';
 import { Component } from 'vue-property-decorator';
 import Navigation from "@/components/base/Navigation.vue";
+import PageFooter from "@/components/base/Footer.vue";
 import PageCover from "@/components/sections/PageCover.vue";
 import Features from "@/components/sections/Features.vue";
 import Apartments from "@/components/sections/Apartments.vue";
 import About from "@/components/sections/About.vue";
 import Quote from "@/components/sections/Quote.vue";
 import Wellness from "@/components/sections/Wellness.vue";
+import Pool from "@/components/sections/Pool.vue";
+import Location from "@/components/sections/Location.vue";
+import Contact from "@/components/sections/Contact.vue";
 
 @Component({
   components: {
@@ -31,6 +39,10 @@ import Wellness from "@/components/sections/Wellness.vue";
     Apartments,
     Quote,
     Wellness,
+    Pool,
+    Location,
+    Contact,
+    PageFooter,
   }
 })
 class LandingPage extends Vue {

@@ -125,11 +125,11 @@ export default Navigation;
     top: 0;
     left: 0;
     width: 100%;
-    height: 92px;
+    height: 80px;
     z-index: 100;
 
     @media screen and (max-width: 1024px) {
-      height: 70px;
+      height: 56px;
     }
 
     @media screen and (max-width: 760px) {
@@ -151,6 +151,11 @@ export default Navigation;
 
       .columns {
         text-align: right;
+        justify-content: space-between;
+
+        .column {
+          width: unset;
+        }
       }
 
       .navigation__item {
@@ -220,7 +225,7 @@ export default Navigation;
     height: 0;
     top: 0;
     left: 0;
-    padding-top: 92px;
+    padding-top: 56px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -262,7 +267,7 @@ export default Navigation;
 
   .navigation__language-selector {
     position: fixed;
-    top: 92px;
+    top: 80px;
     z-index: 100;
     background: linear-gradient(45deg, transparent 0%, transparent 5%, #4B778D 60%, #4B778D 100%);
     width: 100%;
@@ -275,14 +280,14 @@ export default Navigation;
     height: 24px;
 
     @media screen and (max-width: 1024px) {
-      top: 70px;
+      top: 56px;
     }
 
     .navigation__language {
       padding: 0 5px;
 
       &.is-active {
-        font-weight: 800;
+        font-weight: 700;
       }
 
       &.is-clickable {

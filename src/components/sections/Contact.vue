@@ -1,0 +1,107 @@
+<template>
+  <div class="section contact">
+    <div class="contact__block">
+      <div class="contact__block__bg"></div>
+      <h2>
+        {{$t('contact.contactUs')}}
+      </h2>
+      <p>
+        Redžići 50, Bratunac 75420
+      </p>
+      <p>
+        Bosna i Hercegovina
+      </p>
+      <div class="contact__phones">
+        <p class="contact__phone">
+          +41767923562
+        </p>
+        <p class="contact__phone">
+          +38766448280
+        </p>
+      </div>
+      <p>
+        info@riverdrina.ba
+      </p>
+      <div class="contact__ctas">
+        <button class="button">
+          {{ $t(`contact.contactUs`) }}
+        </button>
+        <button class="button">
+          {{ $t(`contact.bookNow`) }}
+        </button>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script lang="ts">
+import Vue from 'vue';
+import { Component } from 'vue-property-decorator';
+
+@Component
+class Contact extends Vue {
+}
+
+export default Contact;
+</script>
+
+<style lang="scss">
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .contact__block {
+    position: relative;
+    padding: 20px;
+    text-align: center;
+
+    .contact__block__bg {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgba(75, 119, 141, 0.2);
+      box-shadow: 0 4px 30px rgba(75, 119, 141, 0.1);
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      border-radius: 16px;
+      border-top: 1px solid #28B5B5;
+      top: 0;
+      left: 0;
+      z-index: 0;
+    }
+
+    >:not(.contact__block__bg) {
+      z-index: 1;
+      position: relative;
+    }
+
+
+    p {
+      padding: 5px;
+    }
+
+    .contact__phones {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .contact__phone {
+        padding: 5px 10px;
+
+        &:first-child {
+          border-right: 2px solid #F8B400;
+        }
+      }
+    }
+
+    .contact__ctas {
+      padding-top: 20px;
+
+      .button {
+        margin: 5px 10px;
+      }
+    }
+  }
+}
+</style>

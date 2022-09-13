@@ -39,7 +39,26 @@ const en = {
     },
     quote: `<span class="has-text-weight-bold">River Drina</span> Apartments & Wellness welcomes you to a <span class="has-text-weight-bold">magical vacation</span>`,
     wellness: {
-        title: 'Wellness & spa'
+        title: 'Wellness & spa',
+        text: `We offer a wellness center with an indoor pool and salt water that is rich in therapeutic characteristics to give you a totally relaxing experience. `,
+        sauna: `Sauna`,
+        saunaText: `A Finnish sauna, which is proven to improve health and well-being, is also part of the wellness area. The skin, face, and entire body look better after spending time in the sauna. Muscles unwind, and a person's general psychological state gets better when they use a sauna. Regular use strengthens the body's defense mechanisms, burns calories, reduces stress, and allows pores to naturally open and perspiration naturally expels dust, dead skin, and pollutants. It is not surprising that one of our visitors' favorite spots is the sauna in our wellness area, because it was constructed with the best materials and can accommodate four people.`,
+    },
+    pool: {
+        title: `Swimming Pool`,
+        text: `The pool provides a singular opportunity to enjoy the view of the Drina in any season due to its exceptional placement. The pool is <span class="has-text-weight-bold">11 m x 4.5 m</span> in size, with a progressive depth increase from <span class="has-text-weight-bold">1.35 m to 1.95 m</span> and a constant temperature of <span class="has-text-weight-bold">29 °C</span>, which makes swimming completely enjoyable. The hydro-aero massage and waterfall effects also help to completely relax and massage the body. The pool is equipped with sophisticated lighting effects and sunbeds for rest and relaxation to complete the atmosphere.
+        <span class="has-text-weight-bold">The pool contains salt water</span> without chlorine thanks to the most advanced technology used in pool maintenance, which makes it safe for everyone who is allergic to chlorine, such as children, elderly, people with sensitive eyes, and people with sinus and respiratory issues. The benefits of this water are also numerous for regular swimmers.`,
+    },
+    location: {
+        title: `Location`,
+        text: `River Drina Apartments & Wellness are located on the riverbank of the Drina River, near Bratunac. Drina's longest part flows directly through the town of Bratunac and contributes to the area with true beauty as it is surrounded by forested hills. 
+        <span class="is-block">Because of their position in Bratunac, our apartments are ideal for both a restful and an active vacation with sports like hiking, cycling, fishing, and discovering the Drina's gorgeous banks.</span>
+        Drina river offers boating opportunities thanks to its abundance, and this calm section of the river also allows for swimming.
+        <span class="is-block">For those who prefer an active vacation and wish to explore their surroundings, the proximity of significant cultural attractions will be a plus.</span>`,
+    },
+    contact: {
+        contactUs: `Contact us`,
+        bookNow: 'Book now',
     }
 }
 

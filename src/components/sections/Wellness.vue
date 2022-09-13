@@ -9,10 +9,10 @@
       <div class="column is-6">
         PHOTO
       </div>
-      <div class="column is-6">
-        <p v-html="$t(`about.p1`)" class="p-b-15"></p>
-        <p v-html="$t(`about.p2`)" class="p-b-15"></p>
-        <p v-html="$t(`about.p3`)"></p>
+      <div class="column is-6 has-text-right">
+        <p v-html="$t(`wellness.text`)" class="p-b-15"></p>
+        <p v-html="$t(`wellness.sauna`)" class="p-b-10 has-text-weight-semibold"></p>
+        <p v-html="$t(`wellness.saunaText`)" class=""></p>
       </div>
     </div>
 
@@ -32,6 +32,6 @@ export default Wellness;
 
 <style lang="scss">
 .wellness{
-  background: #D7D2BE;
+  background: #f4f0dd;
 }
 </style>

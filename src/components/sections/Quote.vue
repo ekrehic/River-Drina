@@ -2,10 +2,12 @@
   <div class="quote_wrapper">
     <div class="quote">
       <div class="section">
-        <h3 v-html="$t(`quote`)"></h3>
-        <span>
-      line
-    </span>
+        <h3 class="has-wave-centered">
+          <span v-html="$t(`quote`)" class="text"></span>
+          <span>
+            <img class="wave" src="@/assets/images/wave-yellow.png" alt="Yellow river drina wave"/>
+          </span>
+        </h3>
       </div>
     </div>
 
@@ -33,11 +35,20 @@ export default Quote;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-image: url("images/wave-white-bg.png");
+  background-size: cover;
+  background-position: bottom center;
+  padding: 20px 0;
 
   h3 {
     text-align: center;
     color: #4B778D;
     max-width: 800px;
+    line-height: 68px;
+
+    .text {
+      padding-bottom: 15px;
+    }
   }
 
 }

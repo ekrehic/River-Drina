@@ -2,8 +2,11 @@
   <div class="section contact">
     <div class="contact__block">
       <div class="contact__block__bg"></div>
-      <h2>
+      <h2 class="has-wave-centered">
         {{$t('contact.contactUs')}}
+        <span>
+          <img class="wave" src="@/assets/images/wave-yellow.png" alt="Yellow river drina wave"/>
+        </span>
       </h2>
       <p>
         Redžići 50, Bratunac 75420

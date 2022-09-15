@@ -1,6 +1,6 @@
 <template>
   <div class="section about">
-    <div class="columns is-multiline">
+    <div class="columns is-multiline is-vcentered">
       <div class="column is-12 p-b-0">
         <h2 class="has-wave-right">
           {{ $t(`about.title`) }}
@@ -9,10 +9,10 @@
           </span>
         </h2>
       </div>
-      <div class="column is-6">
-       PHOTO
+      <div class="column is-6 column--image">
+        <img src="@/assets/images/RiverDrina_about-us.png" alt="About River Drina"/>
       </div>
-      <div class="column is-6">
+      <div class="column is-6 column--text">
         <p v-html="$t(`about.p1`)" class="p-b-15"></p>
         <p v-html="$t(`about.p2`)" class="p-b-15"></p>
         <p v-html="$t(`about.p3`)"></p>
@@ -33,5 +33,22 @@ export default About;
 </script>
 
 <style lang="scss">
+.about {
+  .column--image {
+    padding-right: 80px;
 
+    @media screen and (min-width: 769px) {
+      padding-top: 0;
+    }
+  }
+
+  .column--text {
+    padding-left: 80px;
+
+    @media screen and (min-width: 769px) {
+      padding-top: 0;
+    }
+
+  }
+}
 </style>

@@ -13,7 +13,7 @@
           {{ $t(`apartments.apartment`)}}
         </span>
         <span class="apartment_nav_line">
-          -
+          <img class="wave" src="@/assets/images/wave-yellow.png" alt="Yellow river drina wave"/>
         </span>
         <span class="nav-icon" @click="currentSlide = apartment.id - 1; scrollToApartments();">
           <svg-icons icon="chevronRight" :width="24" :height="24" stroke="#fff"/>
@@ -30,7 +30,7 @@
                         {{ $t(`apartments.apartment`)}}
                       </span>
                 <span class="apartment__title_line">
-                  -
+                  <img class="wave" src="@/assets/images/wave-green.png" alt="Green river drina wave"/>
                 </span>
         </div>
 
@@ -40,8 +40,12 @@
         </div>
 
         <div class="apartment__icons">
-          <div v-for="(icon, index) in apartments[currentSlide].icons" :key="`ap-${currentSlide}-icon-${index}`">
-            <img :src="icon">
+          <div
+              v-for="(icon, index) in apartments[currentSlide].icons"
+              :key="`ap-${currentSlide}-icon-${index}`"
+              class="apartment__icon"
+          >
+            <img :src="icon.src" :alt="icon.alt">
           </div>
         </div>
 
@@ -92,17 +96,41 @@ class Apartments extends Vue {
         text: `${this.$t(`apartments.apartment`)} 1`,
         color: '#f4f0dd',
         navigationBg: '#8FD9A8',
-        cover: require('@/assets/images/apartments/apartment-1.jpg'),
+        cover: require('@/assets/images/apartments/apartment1/cover.png'),
         description: this.$t(`apartments.apartment1.description`),
         icons: [
-          require('@/assets/images/RiverDrina_logo_plain.png'),
-          require('@/assets/images/RiverDrina_logo_plain.png'),
-          require('@/assets/images/RiverDrina_logo_plain.png'),
-          require('@/assets/images/RiverDrina_logo_plain.png'),
-          require('@/assets/images/RiverDrina_logo_plain.png'),
-          require('@/assets/images/RiverDrina_logo_plain.png'),
-          require('@/assets/images/RiverDrina_logo_plain.png'),
-          require('@/assets/images/RiverDrina_logo_plain.png'),
+          {
+            src: require('@/assets/images/amanities/smart-tv.png'),
+            alt: 'Smart TV'
+          },
+          {
+            src: require('@/assets/images/amanities/air-conditioning.png'),
+            alt: 'Air Conditioning'
+          },
+          {
+            src: require('@/assets/images/amanities/fridge.png'),
+            alt: 'Fridge'
+          },
+          {
+            src: require('@/assets/images/amanities/cutlery.png'),
+            alt: 'Cutlery'
+          },
+          {
+            src: require('@/assets/images/amanities/coffee.png'),
+            alt: 'Coffee'
+          },
+          {
+            src: require('@/assets/images/amanities/bedding.png'),
+            alt: 'Bedding'
+          },
+          {
+            src: require('@/assets/images/amanities/hair-dryer.png'),
+            alt: 'Hair Dryer'
+          },
+          {
+            src: require('@/assets/images/amanities/shampoo.png'),
+            alt: 'Shampoo'
+          },
         ],
       },
       {
@@ -110,17 +138,41 @@ class Apartments extends Vue {
         text: `${this.$t(`apartments.apartment`)} 2`,
         color: '#EBE5D6',
         navigationBg: '#28B5B5',
-        cover: require('@/assets/images/apartments/apartment-2.jpg'),
+        cover: require('@/assets/images/apartments/apartment2/cover.png'),
         description: this.$t(`apartments.apartment2.description`),
         icons: [
-          require('@/assets/images/RiverDrina_logo_plain.png'),
-          require('@/assets/images/RiverDrina_logo_plain.png'),
-          require('@/assets/images/RiverDrina_logo_plain.png'),
-          require('@/assets/images/RiverDrina_logo_plain.png'),
-          require('@/assets/images/RiverDrina_logo_plain.png'),
-          require('@/assets/images/RiverDrina_logo_plain.png'),
-          require('@/assets/images/RiverDrina_logo_plain.png'),
-          require('@/assets/images/RiverDrina_logo_plain.png'),
+          {
+            src: require('@/assets/images/amanities/smart-tv.png'),
+            alt: 'Smart TV'
+          },
+          {
+            src: require('@/assets/images/amanities/air-conditioning.png'),
+            alt: 'Air Conditioning'
+          },
+          {
+            src: require('@/assets/images/amanities/fridge.png'),
+            alt: 'Fridge'
+          },
+          {
+            src: require('@/assets/images/amanities/cutlery.png'),
+            alt: 'Cutlery'
+          },
+          {
+            src: require('@/assets/images/amanities/coffee.png'),
+            alt: 'Coffee'
+          },
+          {
+            src: require('@/assets/images/amanities/bedding.png'),
+            alt: 'Bedding'
+          },
+          {
+            src: require('@/assets/images/amanities/hair-dryer.png'),
+            alt: 'Hair Dryer'
+          },
+          {
+            src: require('@/assets/images/amanities/shampoo.png'),
+            alt: 'Shampoo'
+          },
         ],
       },
       {
@@ -128,17 +180,41 @@ class Apartments extends Vue {
         text: `${this.$t(`apartments.apartment`)} 3`,
         color: '#ECE2C6',
         navigationBg: '#4B778D',
-        cover: require('@/assets/images/apartments/apartment-3.jpg'),
+        cover: require('@/assets/images/apartments/apartment3/cover.png'),
         description: this.$t(`apartments.apartment3.description`),
         icons: [
-          require('@/assets/images/RiverDrina_logo_plain.png'),
-          require('@/assets/images/RiverDrina_logo_plain.png'),
-          require('@/assets/images/RiverDrina_logo_plain.png'),
-          require('@/assets/images/RiverDrina_logo_plain.png'),
-          require('@/assets/images/RiverDrina_logo_plain.png'),
-          require('@/assets/images/RiverDrina_logo_plain.png'),
-          require('@/assets/images/RiverDrina_logo_plain.png'),
-          require('@/assets/images/RiverDrina_logo_plain.png'),
+          {
+            src: require('@/assets/images/amanities/smart-tv.png'),
+            alt: 'Smart TV'
+          },
+          {
+            src: require('@/assets/images/amanities/air-conditioning.png'),
+            alt: 'Air Conditioning'
+          },
+          {
+            src: require('@/assets/images/amanities/fridge.png'),
+            alt: 'Fridge'
+          },
+          {
+            src: require('@/assets/images/amanities/cutlery.png'),
+            alt: 'Cutlery'
+          },
+          {
+            src: require('@/assets/images/amanities/coffee.png'),
+            alt: 'Coffee'
+          },
+          {
+            src: require('@/assets/images/amanities/bedding.png'),
+            alt: 'Bedding'
+          },
+          {
+            src: require('@/assets/images/amanities/hair-dryer.png'),
+            alt: 'Hair Dryer'
+          },
+          {
+            src: require('@/assets/images/amanities/shampoo.png'),
+            alt: 'Shampoo'
+          },
         ],
       },
     ];
@@ -219,6 +295,12 @@ export default Apartments;
         }
       }
 
+      .apartment_nav_line {
+        max-width: 40px;
+        position: relative;
+        z-index: 3;
+      }
+
       .nav-icon {
         position: absolute;
         z-index: 3;
@@ -270,6 +352,12 @@ export default Apartments;
         justify-content: center;
         align-items: center;
 
+        .apartment__title_line {
+          max-width: 40px;
+          position: relative;
+          z-index: 3;
+        }
+
         .apartment__title_number {
           position: absolute;
           font-size: 180px;
@@ -294,6 +382,10 @@ export default Apartments;
 
       .apartment__icons {
         display: flex;
+
+        .apartment__icon {
+          padding: 0 5px;
+        }
       }
     }
 

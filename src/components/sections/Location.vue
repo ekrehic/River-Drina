@@ -5,7 +5,12 @@
         MAP
       </div>
       <div class="column is-6 has-text-right">
-        <h2 v-html="$t(`location.title`)"></h2>
+        <h2 class="has-wave-right">
+          <span v-html="$t(`location.title`)"></span>
+          <span>
+            <img class="wave" src="@/assets/images/wave-yellow.png" alt="Yellow river drina wave"/>
+          </span>
+        </h2>
         <p v-html="$t(`location.text`)"></p>
       </div>
     </div>

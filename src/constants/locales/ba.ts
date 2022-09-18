@@ -47,7 +47,7 @@ const ba = {
     pool: {
         title: `Bazen`,
         text: `Zahvaljujući svojoj jedinstvenoj lokaciji, bazen pruža jedinstvenu priliku da uživate u pogledu na Drinu u svim godišnjim dobima. Dimenzije bazena (<span class="has-text-weight-bold">11m x 4,5m</span>) sa postepenim povećanjem dubine od (<span class="has-text-weight-bold">1,35m - 1,95m</span>) i konstantnom temperaturom vode od <span class="has-text-weight-bold">29°C</span> pružaju potpuni užitak u plivanju tokom cijele godine, a efekti hidro-aero masaže i vodopad doprinose potpuno opuštanje, relaksiranje i masažu. Kako bi atmosfera bila potpuna, bazen je opremljen i modernim svjetlosnim efektima, kao i ležaljkama za odmor i opuštanje.
-Zahvaljujući najsavremenijim tehnologijama koje su prisutne u održavanju bazena, <span class="has-text-weight-bold">bazen sadrži slanu vodu</span> bez hlora, koja je pogodna za sve one koji su preosjetljivi na hlor, djecu, starije osobe, kao i one sa osjetljivim očima i sinusima, a prednosti ove vode su i za same kupače, višestruke.`,
+        <br/>Zahvaljujući najsavremenijim tehnologijama koje su prisutne u održavanju bazena, <span class="has-text-weight-bold">bazen sadrži slanu vodu</span> bez hlora, koja je pogodna za sve one koji su preosjetljivi na hlor, djecu, starije osobe, kao i one sa osjetljivim očima i sinusima, a prednosti ove vode su i za same kupače, višestruke.`,
     },
     location: {
         title: `Lokacija`,

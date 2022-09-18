@@ -39,10 +39,19 @@ export default Wellness;
 
   .column--image {
     padding-right: 80px;
+
+    @media screen and (max-width: 768px) {
+      padding: 5px 20px;
+    }
+
   }
 
   .column--text {
     padding-left: 80px;
+
+    @media screen and (max-width: 768px) {
+      padding: 5px 20px;
+    }
   }
 }
 </style>

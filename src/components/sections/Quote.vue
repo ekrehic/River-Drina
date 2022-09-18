@@ -49,6 +49,15 @@ export default Quote;
     .text {
       padding-bottom: 15px;
     }
+
+    @media screen and (max-width: 1024px) {
+      line-height: 58px;
+    }
+
+    @media screen and (max-width: 768px) {
+      line-height: 52px;
+    }
+
   }
 
 }

@@ -13,7 +13,7 @@
         <svg-icons icon="instagram" view-box="0 0 242 242" stroke="transparent" fill="#8FD9A8" :width="24" :height="24"/>
         <svg-icons icon="whatsup" view-box="0 0 308 308" stroke="transparent" fill="#8FD9A8" :width="24" :height="24"/>
       </div>
-      <div class="contact">
+      <div class="contact-mail">
         info@riverdrina.ba
       </div>
       <div class="copyright">
@@ -114,7 +114,7 @@ export default Footer;
       }
     }
 
-    .contact {
+    .contact-mail {
       color: #8fd9a8;
       margin-bottom: 30px;
     }

@@ -61,6 +61,10 @@ export default PageCover;
       max-width: 800px;
       margin-bottom: 20px;
 
+      @media (min-resolution: 108dpi) {
+        max-width: 600px;
+      }
+
       @media screen and (max-width: 1316px) {
         max-width: 600px;
       }
@@ -95,6 +99,10 @@ export default PageCover;
       text-align: center;
       font-size: 38px;
       text-shadow: 1px 1px 1px #4B778D;
+
+      @media (min-resolution: 108dpi) {
+        font-size: 30px;
+      }
 
       @media screen and (max-width: 1024px) {
         font-size: 30px;

@@ -47,7 +47,7 @@ const en = {
     pool: {
         title: `Swimming Pool`,
         text: `The pool provides a singular opportunity to enjoy the view of the Drina in any season due to its exceptional placement. The pool is <span class="has-text-weight-bold">11 m x 4.5 m</span> in size, with a progressive depth increase from <span class="has-text-weight-bold">1.35 m to 1.95 m</span> and a constant temperature of <span class="has-text-weight-bold">29 °C</span>, which makes swimming completely enjoyable. The hydro-aero massage and waterfall effects also help to completely relax and massage the body. The pool is equipped with sophisticated lighting effects and sunbeds for rest and relaxation to complete the atmosphere.
-        <span class="has-text-weight-bold">The pool contains salt water</span> without chlorine thanks to the most advanced technology used in pool maintenance, which makes it safe for everyone who is allergic to chlorine, such as children, elderly, people with sensitive eyes, and people with sinus and respiratory issues. The benefits of this water are also numerous for regular swimmers.`,
+        <br/><span class="has-text-weight-bold">The pool contains salt water</span> without chlorine thanks to the most advanced technology used in pool maintenance, which makes it safe for everyone who is allergic to chlorine, such as children, elderly, people with sensitive eyes, and people with sinus and respiratory issues. The benefits of this water are also numerous for regular swimmers.`,
     },
     location: {
         title: `Location`,

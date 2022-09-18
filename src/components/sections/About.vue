@@ -37,6 +37,10 @@ export default About;
   .column--image {
     padding-right: 80px;
 
+    @media screen and (max-width: 768px) {
+      padding: 5px 20px;
+    }
+
     @media screen and (min-width: 769px) {
       padding-top: 0;
     }
@@ -44,6 +48,10 @@ export default About;
 
   .column--text {
     padding-left: 80px;
+
+    @media screen and (max-width: 768px) {
+      padding: 5px 20px;
+    }
 
     @media screen and (min-width: 769px) {
       padding-top: 0;

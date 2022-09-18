@@ -326,6 +326,11 @@ export default Apartments;
     display: flex;
     position: relative;
 
+    @media screen and (max-width: 768px) {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
     .apartment__info {
       width: 50%;
       transition: all 400ms ease;
@@ -342,6 +347,12 @@ export default Apartments;
 
       @media screen and (max-width: 768px) {
         padding: 40px;
+        width: 100%;
+        align-items: center;
+
+        >* {
+          margin-bottom: 10px;
+        }
       }
 
       .apartment__title {
@@ -392,6 +403,10 @@ export default Apartments;
     .apartment__slider {
       width: 50%;
 
+      @media screen and (max-width: 768px) {
+        width: 100%;
+      }
+
       .VueCarousel {
         line-height: 0;
 
@@ -412,6 +427,12 @@ export default Apartments;
       right: 50px;
       bottom: 40px;
       display: flex;
+
+      @media screen and (max-width: 768px) {
+        top: 20px;
+        right: 20px;
+        bottom: unset;
+      }
 
       .nav-icon {
         border: 3px solid #28B5B5;

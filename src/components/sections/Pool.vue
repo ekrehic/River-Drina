@@ -40,6 +40,10 @@ export default Pool;
     height: 46.5vw;
     position: relative;
 
+    @media screen and (max-width: 768px) {
+      height: unset;
+    }
+
     .columns {
       height: 100%;
 
@@ -51,6 +55,10 @@ export default Pool;
 
       .column__text {
         padding-right: 80px;
+
+        @media screen and (max-width: 768px) {
+          padding: 5px 20px;
+        }
       }
 
       .column__image {

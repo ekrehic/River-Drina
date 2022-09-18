@@ -32,6 +32,12 @@
       font-size: 24px;
       height: 42px;
     }
+
+    @media (min-resolution: 108dpi) {
+      font-size: 24px;
+      height: 48px;
+    }
+
   }
 
   &.is-hollow {

@@ -53,11 +53,15 @@ export default Contact;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-image: url("images/RiverDrina_contact.png");
+  background-size: cover;
+  background-position: center;
 
   .contact__block {
     position: relative;
-    padding: 20px;
+    padding: 20px 40px;
     text-align: center;
+    margin: 20px 0;
 
     .contact__block__bg {
       position: absolute;
@@ -79,6 +83,9 @@ export default Contact;
       position: relative;
     }
 
+    h2, p {
+      color: #fff;
+    }
 
     p {
       padding: 5px;

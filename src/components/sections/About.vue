@@ -37,6 +37,14 @@ export default About;
   .column--image {
     padding-right: 80px;
 
+    @media screen and (max-width: 1316px) {
+      padding-right: 40px;
+    }
+
+    @media screen and (max-width: 1024px) {
+      padding-right: 20px;
+    }
+
     @media screen and (max-width: 768px) {
       padding: 5px 20px;
     }
@@ -48,6 +56,14 @@ export default About;
 
   .column--text {
     padding-left: 80px;
+
+    @media screen and (max-width: 1316px) {
+      padding-left: 40px;
+    }
+
+    @media screen and (max-width: 1024px) {
+      padding-left: 20px;
+    }
 
     @media screen and (max-width: 768px) {
       padding: 5px 20px;

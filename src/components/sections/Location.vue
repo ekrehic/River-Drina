@@ -1,10 +1,11 @@
 <template>
   <div class="location">
     <div class="columns is-multiline m-0">
-      <div class="column is-6 p-0 lh-0">
-        <img src="@/assets/images/RiverDrina_map.png" alt="map" >
+      <div class="column is-12-tablet is-6-desktop column--map p-0 lh-0">
+        <img src="@/assets/images/RiverDrina_map.png" alt="map" class="is-hidden-touch">
+        <img src="@/assets/images/RiverDrina_map-mobile.png" alt="map" class="is-hidden-desktop">
       </div>
-      <div class="column is-6 has-text-right column--location">
+      <div class="column is-12-tablet is-6-desktop has-text-right-desktop has-text-centered-touch column--location">
         <div class="location-info">
           <img src="@/assets/images/RiverDrina_green-shape.png" alt="map" class="location-info__img">
           <div class="location-info__txt">
@@ -37,6 +38,19 @@ export default Location;
 
 <style lang="scss">
 .location {
+  >.columns {
+    @media screen and (max-width: 1024px) {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }
+
+  .column--map {
+    img {
+      width: 100%;
+    }
+  }
+
   .column--location {
     background-image: url("images/RiverDrina_location.png");
     background-size: cover;
@@ -47,15 +61,43 @@ export default Location;
     justify-content: center;
     align-items: center;
 
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 1600px) {
+      padding-right: 160px;
+    }
+
+    @media screen and (max-width: 1412px) {
       padding-right: 120px;
     }
+
+    @media screen and (max-width: 1024px) {
+      padding: 50px;
+    }
+
 
     .location-info {
       position: relative;
 
+      @media screen and (max-width: 1024px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+
       .location-info__img {
         max-width: calc(100% + 40px);
+
+        @media screen and (max-width: 1024px) {
+          max-width: 80%;
+        }
+
+        @media screen and (max-width: 768px) {
+          max-width: 100%;
+        }
+
+        @media screen and (max-width: 700px) {
+          display: none;
+        }
       }
 
       .location-info__txt {
@@ -69,9 +111,36 @@ export default Location;
           top: -40px;
         }
 
+        @media screen and (max-width: 1024px) {
+          top: 10px;
+        }
+
+        @media screen and (max-width: 700px) {
+          position: relative;
+          background: rgba(40, 181, 181, 0.5);
+          border-radius: 8px;
+          padding: 20px;
+        }
+
         h2, p {
           color: #fff;
           margin-bottom: 0;
+        }
+
+        h2 {
+          @media screen and (max-width: 1024px) {
+            font-size: 42px;
+            text-align: center;
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+          }
+        }
+
+        p{
+          @media screen and (max-width: 700px) {
+            padding-top: 25px;
+          }
         }
       }
 
@@ -81,6 +150,19 @@ export default Location;
         padding: 0 20px 0 60px;
         justify-content: center;
         align-items: center;
+
+        @media screen and (max-width: 1024px) {
+          padding: 0 150px;
+          text-align: center;
+        }
+
+        @media screen and (max-width: 768px) {
+          padding: 0 80px;
+        }
+
+        @media screen and (max-width: 700px) {
+          padding: 0;
+        }
       }
     }
   }

@@ -20,9 +20,9 @@
         </span>
       </div>
     </div>
-    <div class="apartment" id="apartment">
-      <div class="apartment__info" :style="`background-color: ${apartments[currentSlide].color}`">
-        <div class="apartment__title">
+    <div class="apartment" id="apartment" :style="`background-color: ${apartments[currentSlide].color}`">
+      <div class="apartment__info">
+        <div class="apartment__title p-b-10">
                 <span class="apartment__title_number">
                   {{ apartments[currentSlide].id }}
                 </span>
@@ -34,12 +34,12 @@
                 </span>
         </div>
 
-        <div class="apartment__description">
+        <div class="apartment__description p-b-5">
           <p v-html="apartments[currentSlide].description" class="p-b-5"></p>
           <p v-html="$t('apartments.capacityInfo')" class="p-b-5"></p>
         </div>
 
-        <div class="apartment__icons">
+        <div class="apartment__icons p-b-10">
           <div
               v-for="(icon, index) in apartments[currentSlide].icons"
               :key="`ap-${currentSlide}-icon-${index}`"
@@ -326,9 +326,10 @@ export default Apartments;
     display: flex;
     position: relative;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1024px) {
       display: flex;
       flex-direction: column-reverse;
+      align-items: center;
     }
 
     .apartment__info {
@@ -341,11 +342,27 @@ export default Apartments;
       align-items: flex-start;
       justify-content: space-around;
 
-      @media screen and (max-width: 1024px) {
-        padding: 40px 80px 80px 120px;
+      @media screen and (min-width: 1920px) {
+        padding: 40px 80px 80px 300px;
       }
 
-      @media screen and (max-width: 768px) {
+      @media screen and (min-width: 2250px) {
+        padding: 40px 80px 80px 350px;
+      }
+
+      @media screen and (max-width: 1600px) {
+        padding: 40px 80px 80px 180px;
+      }
+
+      @media screen and (max-width: 1412px) {
+        padding: 40px 40px 40px 120px;
+      }
+
+      @media screen and (max-width: 1024px) {
+        padding: 40px 80px 80px 80px;
+      }
+
+      @media screen and (max-width: 1024px) {
         padding: 40px;
         width: 100%;
         align-items: center;
@@ -363,6 +380,10 @@ export default Apartments;
         justify-content: center;
         align-items: center;
 
+        @media screen and (max-width: 1312px) and (min-width: 1024px) {
+          height: 100px;
+        }
+
         .apartment__title_line {
           max-width: 40px;
           position: relative;
@@ -379,6 +400,14 @@ export default Apartments;
           align-items: center;
           justify-content: center;
           z-index: 1;
+
+          @media screen and (max-width: 1312px) and (min-width: 1024px) {
+            font-size: 100px;
+          }
+
+          @media screen and (max-width: 1024px) {
+            font-size: 160px;
+          }
         }
 
         .apartment__title_apartment {
@@ -403,7 +432,7 @@ export default Apartments;
     .apartment__slider {
       width: 50%;
 
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 1024px) {
         width: 100%;
       }
 

@@ -3,9 +3,9 @@
     <div class="footer__content">
       <div class="links">
         <div v-for="item in navigationItems" :key="`footer-link-${item.name}`" class="link">
-          <a>
+          <router-link :to="item.link">
             {{ item.name }}
-          </a>
+          </router-link>
         </div>
       </div>
       <div class="social-media">
@@ -35,23 +35,23 @@ class Footer extends Vue {
     return [
       {
         name: this.$t(`navigation.about`),
-        link: ''
+        link: '/about'
       },
       {
         name: this.$t(`navigation.apartments`),
-        link: ''
+        link: '/apartments'
       },
       {
         name: this.$t(`navigation.wellnessSpa`),
-        link: ''
+        link: '/wellness'
       },
       {
         name: this.$t(`navigation.swimmingPool`),
-        link: ''
+        link: '/pool'
       },
       {
         name: this.$t(`navigation.location`),
-        link: ''
+        link: '/location'
       },
     ];
   }

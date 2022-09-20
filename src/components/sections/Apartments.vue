@@ -1,5 +1,5 @@
 <template>
-  <div class="apartments">
+  <div id="apartments" class="apartments">
     <div class="apartments__navigation columns is-mobile m-0">
       <div
           v-for="apartment in apartments" :key="`apartment-nav-${apartment.id}`"
@@ -325,6 +325,7 @@ export default Apartments;
   .apartment {
     display: flex;
     position: relative;
+    transition: all 400ms ease;
 
     @media screen and (max-width: 1024px) {
       display: flex;

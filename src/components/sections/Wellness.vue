@@ -1,5 +1,5 @@
 <template>
-  <div class="section wellness">
+  <div id="wellness" class="section wellness">
     <div class="columns is-multiline is-vcentered">
       <div class="column is-12 p-b-0 has-text-right">
         <h2 class="has-wave-right">

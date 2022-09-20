@@ -1,5 +1,5 @@
 <template>
-  <div class="section contact">
+  <div id="contact" class="section contact">
     <div class="contact__block">
       <div class="contact__block__bg"></div>
       <h2 class="has-wave-centered">

@@ -50,6 +50,10 @@ export default Quote;
       padding-bottom: 15px;
     }
 
+    @media (min-resolution: 108dpi) {
+      line-height: 64px;
+    }
+
     @media screen and (max-width: 1024px) {
       line-height: 58px;
     }

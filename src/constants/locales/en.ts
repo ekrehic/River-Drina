@@ -6,6 +6,7 @@ const en = {
         location: 'Location',
         swimmingPool: 'Swimming pool',
         book: 'Book now',
+        contact: 'Contact',
     },
     cover: {
         text: `<span class="has-text-weight-bold">River Drina Apartments & Wellness</span> welcomes you to a magical vacation for the <span class="has-text-weight-bold">body and soul</span> that will fulfill all your needs for a <span class="has-text-weight-bold">lovely and relaxing</span> stay.`,

@@ -6,6 +6,7 @@ const ba = {
         location: 'Lokacija',
         swimmingPool: 'Bazen',
         book: 'Bukiraj',
+        contact: 'Kontakt',
     },
     cover: {
         text: `<span class="has-text-weight-bold">River Drina Apartments & Wellness</span> osmišljen je da vas uvede u očaravajući odmor za <span class="has-text-weight-bold">dušu i tijelo</span> koji će zadovoljiti sve vaše potrebe za <span class="has-text-weight-bold">lijepim i sporim</span> načinom života i odmora.`,

@@ -9,9 +9,9 @@
         <div class="columns is-vcentered">
           <div v-for="item in navigationItems" :key="`nav-${item.name}`" class="column is-2">
             <div class="navigation__item">
-              <a>
+              <router-link :to="item.link">
                 {{ item.name }}
-              </a>
+              </router-link>
             </div>
           </div>
           <div class="column is-2">
@@ -37,9 +37,11 @@
 
     <div class="navigation__items--mobile is-hidden-desktop" :class="isMobileMenuActive ? 'is-active' : ''">
         <div v-for="item in navigationItems" :key="`nav-${item.name}-mobile`" class="navigation__item">
-          <a>
-            {{ item.name }}
-          </a>
+          <router-link :to="item.link">
+            <div @click="isMobileMenuActive = false;">
+              {{ item.name }}
+            </div>
+          </router-link>
         </div>
         <button class="button is-yellow">
           {{ $t(`navigation.book`) }}
@@ -73,23 +75,27 @@ class Navigation extends Vue {
     return [
       {
         name: this.$t(`navigation.about`),
-        link: ''
+        link: '/about'
       },
       {
         name: this.$t(`navigation.apartments`),
-        link: ''
+        link: '/apartments'
       },
       {
         name: this.$t(`navigation.wellnessSpa`),
-        link: ''
+        link: '/wellness'
       },
       {
         name: this.$t(`navigation.swimmingPool`),
-        link: ''
+        link: '/pool'
       },
       {
         name: this.$t(`navigation.location`),
-        link: ''
+        link: '/location'
+      },
+      {
+        name: this.$t(`navigation.contact`),
+        link: '/contact'
       },
     ];
   }

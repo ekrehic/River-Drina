@@ -60,6 +60,21 @@ const en = {
     contact: {
         contactUs: `Contact us`,
         bookNow: 'Book now',
+    },
+    form: {
+        book: 'Book now',
+        contact: 'Contact us',
+        name: 'Name',
+        apartment: 'Apartment',
+        email: 'Email',
+        phone: 'Phone',
+        arrivalDate: 'Arrival date',
+        departureDate: 'Departure date',
+        adultsNumber: 'Number of adults',
+        childrenNumber: 'Number of children',
+        message: 'Message',
+        firstName: 'First name',
+        lastName: 'Last name',
     }
 }
 

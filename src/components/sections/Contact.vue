@@ -26,23 +26,46 @@
         info@riverdrina.ba
       </p>
       <div class="contact__ctas">
-        <button class="button">
+        <button class="button" @click="modals.contact = true;">
           {{ $t(`contact.contactUs`) }}
         </button>
-        <button class="button">
+        <button class="button" @click="modals.book = true;">
           {{ $t(`contact.bookNow`) }}
         </button>
       </div>
     </div>
+
+    <b-modal v-model="modals.book">
+      <div class="modal__body">
+        <div class="is-flex is-justify-content-center is-align-items-center p-b-20">
+          <img class="wave" src="@/assets/images/wave-green.png" alt="Green river drina wave"/>
+        </div>
+        <book/>
+      </div>
+    </b-modal>
+    <b-modal v-model="modals.contact">
+      <div class="modal__body">
+        CONTACT
+      </div>
+    </b-modal>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
 import { Component } from 'vue-property-decorator';
+import Book from "@/components/forms/Book.vue";
 
-@Component
+@Component({
+  components: {
+    Book,
+  }
+})
 class Contact extends Vue {
+  modals = {
+    book: false,
+    contact: false,
+  }
 }
 
 export default Contact;

@@ -2,7 +2,7 @@
   <div id="pool" class="pool__wrapper">
     <div class="section pool">
       <div class="columns is-multiline">
-        <div class="column is-12 column__title">
+        <div class="column is-12 column__title has-text-centered-touch">
           <h2>
             {{ $t(`pool.title`) }}
             <span>

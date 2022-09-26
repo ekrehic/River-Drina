@@ -60,6 +60,21 @@ const ba = {
     contact: {
         contactUs: `Kontaktiraj nas`,
         bookNow: 'Bukiraj',
+    },
+    form: {
+        book: 'Bukiraj',
+        contact: 'Kontaktiraj',
+        name: 'Ime',
+        apartment: 'Apartman',
+        email: 'Email',
+        phone: 'Broj telefona',
+        arrivalDate: 'Datum dolaska',
+        departureDate: 'Datum odlaska',
+        adultsNumber: 'Broj odraslih',
+        childrenNumber: 'Broj djece',
+        message: 'Poruka',
+        firstName: 'Ime',
+        lastName: 'Prezime',
     }
 }
 

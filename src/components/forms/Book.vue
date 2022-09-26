@@ -92,7 +92,7 @@
     </div>
 
     <div class="column is-12">
-      <form class="form" :name="`book`" method="post" netlify netlify-honeypot="bot-field">
+      <form class="form" :name="`book`" netlify netlify-honeypot="bot-field">
         <input type="hidden" name="form-name" :value="`book`" />
         <div class="columns is-multiline" style="display: none;">
           <div class="column is-6 is-offset-3">
@@ -105,7 +105,7 @@
             <input class="form__input"  type="email" id="email" name="Email"   :value="formData.email">
           </div>
           <div class="column is-6 is-offset-3">
-            <input class="form__input"  type="email" id="phone" name="Phone"  :value="formData.email">
+            <input class="form__input"  type="email" id="phone" name="Phone"  :value="formData.phone">
           </div>
           <div class="column is-6 is-offset-3">
             <input class="form__input" name="Arrival Date" id="arrivalDate"  :value="formData.arrivalDate"/>

@@ -3,7 +3,6 @@ import VueRouter from 'vue-router'
 
 import ComingSoon from "@/components/ComingSoon.vue";
 import LandingPage from "@/components/LandingPage.vue";
-import Book from "@/components/forms/Book.vue";
 
 Vue.use(VueRouter);
 
@@ -61,12 +60,6 @@ export default new VueRouter({
             name: 'Contact',
             component: LandingPage,
             meta: {element: '#contact'}
-        },
-        //todo remove
-        {
-            path: '/book-form-draft',
-            name: 'Book',
-            component: Book,
         },
     ],
     scrollBehavior: function (to) {

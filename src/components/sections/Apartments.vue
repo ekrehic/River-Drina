@@ -50,7 +50,7 @@
         </div>
 
         <div class="apartment__cta">
-          <button class="button">
+          <button class="button" @click="bookApartment">
             {{ $t(`apartments.bookNow`) }}
           </button>
         </div>
@@ -72,6 +72,14 @@
         </carousel>
       </div>
     </div>
+    <b-modal v-model="modals.book">
+      <div class="modal__body">
+        <div class="is-flex is-justify-content-center is-align-items-center p-b-20">
+          <img class="wave" src="@/assets/images/wave-green.png" alt="Green river drina wave"/>
+        </div>
+        <book :apartment="apartments[currentSlide]"/>
+      </div>
+    </b-modal>
   </div>
 </template>
 
@@ -79,15 +87,21 @@
 import Vue from 'vue';
 import { Component } from 'vue-property-decorator';
 import { Carousel, Slide } from 'vue-carousel';
+import Book from "@/components/forms/Book.vue";
 
 @Component({
   components: {
     Carousel,
     Slide,
+    Book,
   }
 })
 class Apartments extends Vue {
   currentSlide = 0;
+
+  modals = {
+    book: false,
+  }
 
   get apartments() {
     return [
@@ -240,6 +254,10 @@ class Apartments extends Vue {
       top: el.offsetTop - 100,
       behavior: 'smooth'
     });
+  }
+
+  bookApartment() {
+    this.modals.book = true;
   }
 }
 

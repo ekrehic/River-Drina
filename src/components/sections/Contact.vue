@@ -45,7 +45,10 @@
     </b-modal>
     <b-modal v-model="modals.contact">
       <div class="modal__body">
-        CONTACT
+        <div class="is-flex is-justify-content-center is-align-items-center p-b-20">
+          <img class="wave" src="@/assets/images/wave-green.png" alt="Green river drina wave"/>
+        </div>
+        <contact-form/>
       </div>
     </b-modal>
   </div>
@@ -55,10 +58,12 @@
 import Vue from 'vue';
 import { Component } from 'vue-property-decorator';
 import Book from "@/components/forms/Book.vue";
+import ContactForm from "@/components/forms/ContactForm.vue";
 
 @Component({
   components: {
     Book,
+    ContactForm,
   }
 })
 class Contact extends Vue {

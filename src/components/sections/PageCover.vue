@@ -5,21 +5,35 @@
         <img class="logo" src="@/assets/images/RiverDrina_text.png" alt="RIVER DRINA"/>
         <img class="wave" src="@/assets/images/wave-yellow.png" alt="Yellow river drina wave"/>
         <h1 v-html="$t(`cover.text`)"></h1>
-        <button class="button is-large is-green">
+        <button class="button is-large is-green" @click="modals.contact = true">
           {{ $t(`cover.cta`) }}
         </button>
       </div>
       <div class="waves-animation"></div>
+      <b-modal v-model="modals.contact">
+        <div class="modal__body">
+          <div class="is-flex is-justify-content-center is-align-items-center p-b-20">
+            <img class="wave" src="@/assets/images/wave-green.png" alt="Green river drina wave"/>
+          </div>
+          <contact-form/>
+        </div>
+      </b-modal>
     </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
 import { Component } from 'vue-property-decorator';
+import ContactForm from "@/components/forms/ContactForm.vue";
 
-@Component
-class PageCover extends Vue {
-
+@Component({
+  components: {
+    ContactForm,
+  }
+})class PageCover extends Vue {
+  modals = {
+    contact: false,
+  }
 }
 
 export default PageCover;

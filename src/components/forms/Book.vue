@@ -92,7 +92,7 @@
     </div>
 
     <div class="column is-12">
-      <form class="form" :name="`book`" netlify netlify-honeypot="bot-field">
+      <form class="form" :name="`book`" netlify netlify-honeypot="bot-field" method="post">
         <input type="hidden" name="form-name" :value="`book`" />
         <div class="columns is-multiline" style="display: none;">
           <div class="column is-6 is-offset-3">
@@ -147,10 +147,16 @@
 
 <script lang="ts">
 import Vue from 'vue';
-import { Component } from 'vue-property-decorator';
+import {Component, PropSync} from 'vue-property-decorator';
 
 @Component
-class Quote extends Vue {
+class Book extends Vue {
+  @PropSync('apartment', {default: null})
+
+  created() {
+
+  }
+
   formData = {
     name: '',
     apartment: null,
@@ -187,9 +193,19 @@ class Quote extends Vue {
     if (parameters.includes(event.key)) event.preventDefault();
   }
 
+  mounted() {
+    if(this.apartment) {
+      const apartmentOption = this.apartmentOptions.find(a => {
+        return a.id === this.apartment.id;
+      });
+
+      Vue.set(this.formData, 'apartment', apartmentOption.value);
+    }
+  }
+
 }
 
-export default Quote;
+export default Book;
 </script>
 
 <style lang="scss">

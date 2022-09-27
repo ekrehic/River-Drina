@@ -17,6 +17,9 @@
           <img src="@/assets/images/pool/pool_cover.png" alt="About River Drina" class="is-hidden-touch"/>
         </div>
       </div>
+<!--      <div class="pool__gallery-cta" @click="modals.gallery = true">-->
+<!--        <img src="@/assets/images/gallery_icon.png" alt="Pool Gallery"/>-->
+<!--      </div>-->
     </div>
     <div class="pool__img--touch lh-0">
       <img src="@/assets/images/pool/pool_mobile.png" alt="About River Drina" class="is-hidden-desktop"/>
@@ -24,15 +27,42 @@
 
       </div>
     </div>
+
+    <b-modal v-model="modals.gallery">
+      <div class="modal__body">
+        <div class="is-flex is-justify-content-center is-align-items-center p-b-20">
+          <gallery :images="galleryImages"/>
+        </div>
+      </div>
+    </b-modal>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
 import { Component } from 'vue-property-decorator';
+import Gallery from "@/components/base/Gallery.vue";
 
-@Component
+@Component({
+  components: {
+    Gallery,
+  }
+})
 class Pool extends Vue {
+  modals = {
+    gallery: false,
+  };
+
+  get galleryImages() {
+    return [
+      require('@/assets/images/apartments/apartment3/cover.png'),
+      require('@/assets/images/apartments/apartment1/cover.png'),
+      require('@/assets/images/apartments/apartment2/cover.png'),
+      require('@/assets/images/apartments/apartment1/cover.png'),
+      require('@/assets/images/apartments/apartment3/cover.png'),
+      require('@/assets/images/apartments/apartment2/cover.png'),
+    ]
+  }
 }
 
 export default Pool;
@@ -124,6 +154,22 @@ export default Pool;
       height: 40%;
       top: -5px;
       background: linear-gradient(180deg, #2ca9f9 0%, #2ca9f9 15%, transparent 100%);
+    }
+  }
+
+  .pool__gallery-cta {
+    cursor: pointer;
+    transition: transform 400ms ease;
+    position: absolute;
+    z-index: 2;
+    max-width: 40px;
+
+    @media screen and (max-width: 1024px) {
+      right: 25px;
+    }
+
+    &:hover {
+      transform: scale(1.05);
     }
   }
 }

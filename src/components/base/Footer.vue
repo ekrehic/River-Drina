@@ -9,9 +9,15 @@
         </div>
       </div>
       <div class="social-media">
-        <svg-icons icon="facebook" stroke="transparent" fill="#8FD9A8" :width="24" :height="24"/>
-        <svg-icons icon="instagram" view-box="0 0 242 242" stroke="transparent" fill="#8FD9A8" :width="24" :height="24"/>
-        <svg-icons icon="whatsup" view-box="0 0 308 308" stroke="transparent" fill="#8FD9A8" :width="24" :height="24"/>
+        <a href="https://facebook.com/riverdrina/" target="_blank">
+          <svg-icons icon="facebook" stroke="transparent" fill="#8FD9A8" :width="24" :height="24"/>
+        </a>
+        <a href="https://www.instagram.com/riverapartments/" target="_blank">
+          <svg-icons icon="instagram" view-box="0 0 242 242" stroke="transparent" fill="#8FD9A8" :width="24" :height="24"/>
+        </a>
+        <a href="https://wa.me/41767923562" target="_blank">
+          <svg-icons icon="whatsup" view-box="0 0 308 308" stroke="transparent" fill="#8FD9A8" :width="24" :height="24"/>
+        </a>
       </div>
       <div class="contact-mail">
         info@riverdrina.ba

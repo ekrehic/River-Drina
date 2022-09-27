@@ -15,7 +15,7 @@
             </div>
           </div>
           <div class="column is-2">
-            <button class="button">
+            <button class="button" @click="bookApartment">
               {{ $t(`navigation.book`) }}
             </button>
           </div>
@@ -43,7 +43,7 @@
             </div>
           </router-link>
         </div>
-        <button class="button is-yellow">
+        <button class="button is-yellow" @click="bookApartment">
           {{ $t(`navigation.book`) }}
         </button>
     </div>
@@ -59,6 +59,15 @@
         ENG
       </span>
     </div>
+
+    <b-modal v-model="modals.book">
+      <div class="modal__body">
+        <div class="is-flex is-justify-content-center is-align-items-center p-b-20">
+          <img class="wave" src="@/assets/images/wave-green.png" alt="Green river drina wave"/>
+        </div>
+        <book/>
+      </div>
+    </b-modal>
   </div>
 
 </template>
@@ -66,10 +75,19 @@
 <script lang="ts">
 import Vue from 'vue';
 import { Component } from 'vue-property-decorator';
+import Book from "@/components/forms/Book.vue";
 
-@Component
+@Component({
+  components: {
+    Book,
+  }
+})
 class Navigation extends Vue {
   isMobileMenuActive = false;
+
+  modals = {
+    book: false,
+  }
 
   get navigationItems() {
     return [
@@ -113,6 +131,10 @@ class Navigation extends Vue {
 
   toggleMenu() {
     this.isMobileMenuActive = !this.isMobileMenuActive;
+  }
+
+  bookApartment() {
+    this.modals.book = true;
   }
 }
 

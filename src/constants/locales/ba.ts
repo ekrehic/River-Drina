@@ -63,7 +63,7 @@ const ba = {
     },
     form: {
         book: 'Bukiraj',
-        contact: 'Kontaktiraj',
+        contact: 'Kontaktiraj nas',
         name: 'Ime',
         apartment: 'Apartman',
         email: 'Email',

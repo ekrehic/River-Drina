@@ -17,9 +17,9 @@
           <img src="@/assets/images/pool/pool_cover.png" alt="About River Drina" class="is-hidden-touch"/>
         </div>
       </div>
-<!--      <div class="pool__gallery-cta" @click="modals.gallery = true">-->
-<!--        <img src="@/assets/images/gallery_icon.png" alt="Pool Gallery"/>-->
-<!--      </div>-->
+      <div class="pool__gallery-cta" @click="modals.gallery = true">
+        <img src="@/assets/images/gallery_icon.png" alt="Pool Gallery"/>
+      </div>
     </div>
     <div class="pool__img--touch lh-0">
       <img src="@/assets/images/pool/pool_mobile.png" alt="About River Drina" class="is-hidden-desktop"/>
@@ -55,12 +55,9 @@ class Pool extends Vue {
 
   get galleryImages() {
     return [
-      require('@/assets/images/apartments/apartment3/cover.png'),
-      require('@/assets/images/apartments/apartment1/cover.png'),
-      require('@/assets/images/apartments/apartment2/cover.png'),
-      require('@/assets/images/apartments/apartment1/cover.png'),
-      require('@/assets/images/apartments/apartment3/cover.png'),
-      require('@/assets/images/apartments/apartment2/cover.png'),
+      require('@/assets/images/gallery/pool/1.jpg'),
+      require('@/assets/images/gallery/pool/2.jpg'),
+      require('@/assets/images/gallery/pool/3.jpg'),
     ]
   }
 }

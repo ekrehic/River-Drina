@@ -82,6 +82,8 @@ export default Gallery;
   .gallery__preview {
     .gallery__preview__item {
       cursor: pointer;
+      height: 70px;
+      overflow: hidden;
 
       &.is-active {
         border: 2px solid #F8B400;

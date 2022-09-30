@@ -70,6 +70,9 @@
             <img :alt="`River Drina Apartment ${apartment.id}`" :src="apartment.cover"/>
           </slide>
         </carousel>
+        <div class="apartment__gallery-cta" @click="modals.gallery = true">
+          <img src="@/assets/images/gallery_icon.png" alt="Apartment Gallery"/>
+        </div>
       </div>
     </div>
     <b-modal v-model="modals.book">
@@ -80,6 +83,14 @@
         <book :apartment="apartments[currentSlide]"/>
       </div>
     </b-modal>
+
+    <b-modal v-model="modals.gallery">
+      <div class="modal__body">
+        <div class="is-flex is-justify-content-center is-align-items-center p-b-20">
+          <gallery :images="apartments[currentSlide].galleryImages"/>
+        </div>
+      </div>
+    </b-modal>
   </div>
 </template>
 
@@ -88,12 +99,14 @@ import Vue from 'vue';
 import { Component } from 'vue-property-decorator';
 import { Carousel, Slide } from 'vue-carousel';
 import Book from "@/components/forms/Book.vue";
+import Gallery from "@/components/base/Gallery.vue";
 
 @Component({
   components: {
     Carousel,
     Slide,
     Book,
+    Gallery,
   }
 })
 class Apartments extends Vue {
@@ -101,6 +114,7 @@ class Apartments extends Vue {
 
   modals = {
     book: false,
+    gallery: false,
   }
 
   get apartments() {
@@ -112,6 +126,12 @@ class Apartments extends Vue {
         navigationBg: '#8FD9A8',
         cover: require('@/assets/images/apartments/apartment1/cover.png'),
         description: this.$t(`apartments.apartment1.description`),
+        galleryImages: [
+          require('@/assets/images/gallery/apartment-1/1.jpg'),
+          require('@/assets/images/gallery/apartment-1/2.jpg'),
+          require('@/assets/images/gallery/apartment-1/3.jpg'),
+          require('@/assets/images/gallery/apartment-1/4.jpg'),
+        ],
         icons: [
           {
             src: require('@/assets/images/amanities/smart-tv.png'),
@@ -154,6 +174,15 @@ class Apartments extends Vue {
         navigationBg: '#28B5B5',
         cover: require('@/assets/images/apartments/apartment2/cover.png'),
         description: this.$t(`apartments.apartment2.description`),
+        galleryImages: [
+          require('@/assets/images/gallery/apartment-2/1.jpg'),
+          require('@/assets/images/gallery/apartment-2/2.jpg'),
+          require('@/assets/images/gallery/apartment-2/3.jpg'),
+          require('@/assets/images/gallery/apartment-2/4.jpg'),
+          require('@/assets/images/gallery/apartment-2/5.jpg'),
+          require('@/assets/images/gallery/apartment-2/6.jpg'),
+          require('@/assets/images/gallery/apartment-2/7.jpg'),
+        ],
         icons: [
           {
             src: require('@/assets/images/amanities/smart-tv.png'),
@@ -196,6 +225,13 @@ class Apartments extends Vue {
         navigationBg: '#4B778D',
         cover: require('@/assets/images/apartments/apartment3/cover.png'),
         description: this.$t(`apartments.apartment3.description`),
+        galleryImages: [
+          require('@/assets/images/gallery/apartment-3/1.jpg'),
+          require('@/assets/images/gallery/apartment-3/2.jpg'),
+          require('@/assets/images/gallery/apartment-3/3.jpg'),
+          require('@/assets/images/gallery/apartment-3/4.jpg'),
+          require('@/assets/images/gallery/apartment-3/5.jpg'),
+        ],
         icons: [
           {
             src: require('@/assets/images/amanities/smart-tv.png'),
@@ -450,6 +486,7 @@ export default Apartments;
 
     .apartment__slider {
       width: 50%;
+      position: relative;
 
       @media screen and (max-width: 1024px) {
         width: 100%;
@@ -466,6 +503,17 @@ export default Apartments;
           img {
             width: 100%;
           }
+        }
+      }
+
+      .apartment__gallery-cta {
+        position: absolute;
+        bottom: 40px;
+        right: 40px;
+        width: 40px;
+
+        &:hover {
+          transform: scale(1.05);
         }
       }
     }

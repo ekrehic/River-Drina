@@ -41,3 +41,22 @@ body {
     padding: 20px 30px;
   }
 }
+
+*{
+&::-webkit-scrollbar-track {
+  -webkit-box-shadow: rem-calc(0px) rem-calc(0px) rem-calc(12px) rgba(0, 0, 0, 0.2);
+  border: rem-calc(1px) solid rgba(0, 0, 0, 0.2);
+  border-radius: rem-calc(8px);
+}
+
+&::-webkit-scrollbar-thumb {
+  background-color: transparentize(#083C5A, 0.2);
+  border-radius: 8px;
+  background-clip: padding-box;
+}
+
+&::-webkit-scrollbar {
+  width: 4px;
+}
+
+}

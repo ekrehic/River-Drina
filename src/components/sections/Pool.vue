@@ -28,7 +28,7 @@
       </div>
     </div>
 
-    <b-modal v-model="modals.gallery">
+    <b-modal v-model="modals.gallery" custom-class="is-large-mobile">
       <div class="modal__body">
         <div class="is-flex is-justify-content-center is-align-items-center p-b-20">
           <gallery :images="galleryImages"/>

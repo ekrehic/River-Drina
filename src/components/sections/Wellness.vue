@@ -13,8 +13,8 @@
         <img src="@/assets/images/RiverDrina_wellness-spa.png" alt="About River Drina"/>
       </div>
       <div class="column is-6 has-text-right column--text">
-        <p v-html="$t(`wellness.text`)" class="p-b-25"></p>
-        <p v-html="$t(`wellness.sauna`)" class="p-b-20 has-text-weight-semibold"></p>
+        <p v-html="$t(`wellness.text`)" class="p-b-25 has-text-weight-bold"></p>
+        <p v-html="$t(`wellness.sauna`)" class="p-b-10 is-uppercase"></p>
         <p v-html="$t(`wellness.saunaText`)" class=""></p>
       </div>
     </div>

@@ -11,7 +11,7 @@
         <svg-icons icon="chevronRight" :width="42" :height="42"  stroke="currentColor"/>
       </div>
     </div>
-    <div class="columns is-multiline m-0 gallery__preview p-r-40 p-l-40">
+    <div class="columns is-multiline m-0 gallery__preview p-r-40 p-l-40 is-hidden-mobile">
       <div v-for="(image, i) in images" :key="`gallery-item-${i}`" class="column is-2">
         <div class="gallery__preview__item" :class="currentIndex === i ? 'is-active' : ''" @click="setCurrent(i)">
           <img :src="image" alt="Gallery Item"/>

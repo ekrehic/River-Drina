@@ -15,7 +15,9 @@
       <div class="column is-6 column--text">
         <p v-html="$t(`about.p1`)" class="p-b-15"></p>
         <p v-html="$t(`about.p2`)" class="p-b-15"></p>
-        <p v-html="$t(`about.p3`)"></p>
+        <p v-html="$t(`about.p3`)" class="p-b-15"></p>
+        <p v-html="$t(`about.p4`)" class="p-b-15"></p>
+        <p v-html="$t(`about.p5`)" class="p-b-15"></p>
       </div>
     </div>
   </div>

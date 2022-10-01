@@ -20,6 +20,9 @@
       max-height: 100%;
       overflow: auto;
 
+      @media screen and (max-width: 768px) {
+        padding: 60px 10px 10px;
+      }
     }
 
     .modal-close {
@@ -41,6 +44,30 @@
         min-height: 70px;
         min-width: 70px;
         width: 70px;
+
+        @media screen and (max-width: 768px) {
+          height: 40px;
+          max-height: 40px;
+          max-width: 40px;
+          min-height: 40px;
+          min-width: 40px;
+          width: 40px;
+          top: 5px;
+          right: 5px;
+        }
+      }
+    }
+
+  }
+
+  &.is-large-mobile {
+    @media screen and (max-width: 768px) {
+      .modal-content {
+        padding: 0;
+
+        .modal__body {
+          background: transparent;
+        }
       }
     }
 

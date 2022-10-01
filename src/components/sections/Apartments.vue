@@ -36,7 +36,7 @@
 
         <div class="apartment__description p-b-5">
           <p v-html="apartments[currentSlide].description" class="p-b-5"></p>
-          <p v-html="$t('apartments.capacityInfo')" class="p-b-5"></p>
+<!--          <p v-html="$t('apartments.capacityInfo')" class="p-b-5"></p>-->
         </div>
 
         <div class="apartment__icons p-b-10">
@@ -84,7 +84,7 @@
       </div>
     </b-modal>
 
-    <b-modal v-model="modals.gallery">
+    <b-modal v-model="modals.gallery" custom-class="is-large-mobile">
       <div class="modal__body">
         <div class="is-flex is-justify-content-center is-align-items-center p-b-20">
           <gallery :images="apartments[currentSlide].galleryImages"/>
@@ -507,6 +507,7 @@ export default Apartments;
       }
 
       .apartment__gallery-cta {
+        cursor: pointer;
         position: absolute;
         bottom: 40px;
         right: 40px;

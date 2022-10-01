@@ -194,7 +194,7 @@ export default Navigation;
       &.navigation__menu--touch {
         .menu {
           display: flex;
-          justify-content: end;
+          justify-content: flex-end;
 
           .line--1,
           .line--3 {

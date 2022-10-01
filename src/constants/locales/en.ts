@@ -59,6 +59,9 @@ const en = {
         Drina river offers boating opportunities thanks to its abundance, and this calm section of the river also allows for swimming.
         <span class="is-block">For those who prefer an active vacation and wish to explore their surroundings, the proximity of significant cultural attractions will be a plus.</span>`,
     },
+    welcome: {
+      text: `Welcome to your perfect vacation!`,
+    },
     contact: {
         contactUs: `Contact us`,
         bookNow: 'Book now',

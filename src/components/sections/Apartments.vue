@@ -39,6 +39,10 @@
 <!--          <p v-html="$t('apartments.capacityInfo')" class="p-b-5"></p>-->
         </div>
 
+        <div class="apartment__capacity">
+          <img :src="apartments[currentSlide].capacity.img" :alt="`Capacity ${apartments[currentSlide].capacity.number} persons`">
+        </div>
+
         <div class="apartment__icons p-b-10">
           <div
               v-for="(icon, index) in apartments[currentSlide].icons"
@@ -132,6 +136,10 @@ class Apartments extends Vue {
           require('@/assets/images/gallery/apartment-1/3.jpg'),
           require('@/assets/images/gallery/apartment-1/4.jpg'),
         ],
+        capacity: {
+          img: require('@/assets/images/apartments/capacity_4.png'),
+          number: '4',
+        },
         icons: [
           {
             src: require('@/assets/images/amanities/smart-tv.png'),
@@ -183,6 +191,10 @@ class Apartments extends Vue {
           require('@/assets/images/gallery/apartment-2/6.jpg'),
           require('@/assets/images/gallery/apartment-2/7.jpg'),
         ],
+        capacity: {
+          img: require('@/assets/images/apartments/capacity_4.png'),
+          number: '4',
+        },
         icons: [
           {
             src: require('@/assets/images/amanities/smart-tv.png'),
@@ -232,6 +244,10 @@ class Apartments extends Vue {
           require('@/assets/images/gallery/apartment-3/4.jpg'),
           require('@/assets/images/gallery/apartment-3/5.jpg'),
         ],
+        capacity: {
+          img: require('@/assets/images/apartments/capacity_2.png'),
+          number: '2',
+        },
         icons: [
           {
             src: require('@/assets/images/amanities/smart-tv.png'),
@@ -472,6 +488,16 @@ export default Apartments;
           z-index: 2;
           padding-top: 24px;
           font-weight: 600;
+        }
+      }
+
+      .apartment__capacity {
+        img {
+          height: 50px;
+
+          @media screen and (max-width: 768px) {
+            height: 35px;
+          }
         }
       }
 

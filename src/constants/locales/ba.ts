@@ -75,6 +75,9 @@ same kupače, višestruke.</span>`,
         <span class="is-block">Svojim bogatstvom Drina nudi mogućnost vožnje čamcem, ali i uživanja u kupanju u ovom kraju pitome rijeke.</span>
         Blizina važnih kulturnih destinacija zadovoljit će i one koji su željni aktivnog odmora i upoznavanja okružja u kojima provode svoj odmor.`,
     },
+    welcome: {
+        text: `Dobrodošli na vaš savršeni odmor.`,
+    },
     contact: {
         contactUs: `Kontaktiraj nas`,
         bookNow: 'Bukiraj',

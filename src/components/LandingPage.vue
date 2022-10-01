@@ -9,6 +9,7 @@
     <wellness/>
     <pool/>
     <location/>
+    <text-block :text="$t(`welcome.text`)"/>
     <contact/>
     <page-footer/>
   </div>
@@ -25,6 +26,7 @@ import Features from "@/components/sections/Features.vue";
 import Apartments from "@/components/sections/Apartments.vue";
 import About from "@/components/sections/About.vue";
 import Quote from "@/components/sections/Quote.vue";
+import TextBlock from "@/components/sections/TextBlock.vue";
 import Wellness from "@/components/sections/Wellness.vue";
 import Pool from "@/components/sections/Pool.vue";
 import Location from "@/components/sections/Location.vue";
@@ -43,6 +45,7 @@ import Contact from "@/components/sections/Contact.vue";
     Location,
     Contact,
     PageFooter,
+    TextBlock,
   }
 })
 class LandingPage extends Vue {

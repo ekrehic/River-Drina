@@ -20,10 +20,10 @@ const en = {
     },
     about: {
         title: 'About us',
-        p1: `River Drina Apartments &amp; Wellness, located in <span class="has-text-weight-bold">untouched nature,</span>, offers a unique experience by combining <span class="has-text-weight-bold">modern style</span> and <span class="has-text-weight-bold">authentic ambiance,.</span>, far away from the hustle and bustle of the city.`,
+        p1: `River Drina Apartments &amp; Wellness, located in <span class="has-text-weight-bold">untouched nature</span>, offers a unique experience by combining <span class="has-text-weight-bold">modern style</span> and <span class="has-text-weight-bold">authentic ambiance</span>, far away from the hustle and bustle of the city.`,
         p2: `The concept of <span class="has-text-weight-bold">River Drina Apartments &amp; Wellness</span> on beautiful rivers banks, is developed through worldwide travel experiences and studying the needs of <span class="has-text-weight-bold">body</span> and <span class="has-text-weight-bold">soul</span>, as well as the desire to invite you to explore our beautiful homeland and untouched nature.`,
         p3: `The complex has three <span class="has-text-weight-bold">luxuriously</span> equipped apartments with a capacity of 12 guests and a wellness center including a comfortable <span class="has-text-weight-bold">sauna</span> and an <span class="has-text-weight-bold">indoor saltwater pool.</span>`,
-        p4: `There is a spacious <span class="has-text-weight-bold">children’s playground</span> within the fenced area, while our <span class="has-text-weight-bold">romantic pergola</span> offers a beautiful view of the Drina River and includes a fireplace and barbecue for a completely <span class="has-text-weight-bold">hedonistički doživljaj.</span>`,
+        p4: `There is a spacious <span class="has-text-weight-bold">children’s playground</span> within the fenced area, while our <span class="has-text-weight-bold">romantic pergola</span> offers a beautiful view of the Drina River and includes a fireplace and barbecue for a completely <span class="has-text-weight-bold">hedonistic experience.</span>`,
         p5: `<span class="has-text-weight-bold">Free parking</span> is available on site, as well as a modern <span class="has-text-weight-bold">surveillance system.</span>`,
     },
     apartments: {
@@ -88,7 +88,8 @@ With its wealth, the Drina offers the possibility of boating but also swimming i
         message: 'Message',
         firstName: 'First name',
         lastName: 'Last name',
-    }
+    },
+    gallery: 'gallery',
 }
 
 export default en;

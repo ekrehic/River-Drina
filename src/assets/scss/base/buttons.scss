@@ -50,4 +50,42 @@
   &.is-yellow {
     background: #F8B400;
   }
+
+  &.is-yellow-shape {
+    background-image: url("../images/RiverDrina_yellow-shape.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+
+    @media screen and (max-width: 768px) {
+      width: 45px;
+      height: 45px;
+    }
+  }
+
+  &.is-green-shape {
+    background-image: url("../images/RiverDrina_green-shape.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+
+    @media screen and (max-width: 768px) {
+      width: 45px;
+      height: 45px;
+    }
+  }
 }

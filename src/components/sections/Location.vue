@@ -2,8 +2,10 @@
   <div id="location" class="location">
     <div class="columns is-multiline m-0">
       <div class="column is-12-tablet is-6-desktop column--map p-0 lh-0">
-        <img src="@/assets/images/RiverDrina_map.png" alt="map" class="is-hidden-touch">
-        <img src="@/assets/images/RiverDrina_map-mobile.png" alt="map" class="is-hidden-desktop">
+        <a href="https://goo.gl/maps/hjTLtGcn31tg8drWA" target="_blank">
+          <img src="@/assets/images/RiverDrina_map.png" alt="map" class="is-hidden-touch">
+          <img src="@/assets/images/RiverDrina_map-mobile.png" alt="map" class="is-hidden-desktop">
+        </a>
       </div>
       <div class="column is-12-tablet is-6-desktop has-text-right-desktop has-text-centered-touch column--location">
         <div class="location-info">

@@ -74,7 +74,7 @@
             <img :alt="`River Drina Apartment ${apartment.id}`" :src="apartment.cover"/>
           </slide>
         </carousel>
-        <div class="apartment__gallery-cta" @click="modals.gallery = true">
+        <div class="button is-green-shape apartment__gallery-cta" :content="$t(`gallery`)" @click="modals.gallery = true">
           <img src="@/assets/images/gallery_icon.png" alt="Apartment Gallery"/>
         </div>
       </div>
@@ -135,6 +135,7 @@ class Apartments extends Vue {
           require('@/assets/images/gallery/apartment-1/2.jpg'),
           require('@/assets/images/gallery/apartment-1/3.jpg'),
           require('@/assets/images/gallery/apartment-1/4.jpg'),
+          require('@/assets/images/gallery/apartment-1/5.jpg'),
         ],
         capacity: {
           img: require('@/assets/images/apartments/capacity_4.png'),
@@ -188,7 +189,6 @@ class Apartments extends Vue {
           require('@/assets/images/gallery/apartment-2/3.jpg'),
           require('@/assets/images/gallery/apartment-2/4.jpg'),
           require('@/assets/images/gallery/apartment-2/5.jpg'),
-          require('@/assets/images/gallery/apartment-2/6.jpg'),
           require('@/assets/images/gallery/apartment-2/7.jpg'),
         ],
         capacity: {
@@ -535,12 +535,39 @@ export default Apartments;
       .apartment__gallery-cta {
         cursor: pointer;
         position: absolute;
-        bottom: 40px;
-        right: 40px;
-        width: 40px;
+        bottom: 50px;
+        right: 50px;
+
+        @media screen and (max-width: 768px) {
+          bottom: 20px;
+          right: 10px;
+        }
+
+        img {
+          max-width: 60%;
+
+          @media screen and (max-width: 768px) {
+            max-width: 65%;
+          }
+        }
 
         &:hover {
-          transform: scale(1.05);
+          transform: scale(1.1);
+        }
+
+        &:after {
+          content: attr(content);
+          display: block;
+          text-transform: uppercase;
+          position: absolute;
+          top: calc(100% + 5px);
+          font-size: 12px;
+          color: #ffffff;
+          font-weight: 600;
+
+          @media screen and (max-width: 768px) {
+            display: none;
+          }
         }
       }
     }

@@ -96,7 +96,8 @@ same kupače, višestruke.</span>`,
         message: 'Poruka',
         firstName: 'Ime',
         lastName: 'Prezime',
-    }
+    },
+    gallery: 'galerija',
 }
 
 export default ba;

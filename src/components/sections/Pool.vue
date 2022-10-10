@@ -17,7 +17,8 @@
           <img src="@/assets/images/pool/pool_cover.png" alt="About River Drina" class="is-hidden-touch"/>
         </div>
       </div>
-      <div class="pool__gallery-cta" @click="modals.gallery = true">
+      <div class=" button is-yellow-shape pool__gallery-cta" :content="$t(`gallery`)" @click="modals.gallery = true">
+
         <img src="@/assets/images/gallery_icon.png" alt="Pool Gallery"/>
       </div>
     </div>
@@ -159,14 +160,37 @@ export default Pool;
     transition: transform 400ms ease;
     position: absolute;
     z-index: 2;
-    max-width: 40px;
+    max-width: 100px;
 
     @media screen and (max-width: 1024px) {
       right: 25px;
     }
 
+    img {
+      max-width: 60%;
+
+      @media screen and (max-width: 768px) {
+        max-width: 65%;
+      }
+    }
+
     &:hover {
-      transform: scale(1.05);
+      transform: scale(1.1);
+    }
+
+    &:after {
+      content: attr(content);
+      display: block;
+      text-transform: uppercase;
+      position: absolute;
+      top: calc(100% + 5px);
+      font-size: 12px;
+      color: #ffffff;
+      font-weight: 600;
+
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
     }
   }
 }

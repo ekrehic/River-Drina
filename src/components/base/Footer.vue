@@ -20,7 +20,9 @@
         </a>
       </div>
       <div class="contact-mail">
-        info@riverdrina.ba
+        <a href="mailto:info@riverdrina.ba">
+          info@riverdrina.ba
+        </a>
       </div>
       <div class="copyright">
         <span>
@@ -121,8 +123,11 @@ export default Footer;
     }
 
     .contact-mail {
-      color: #8fd9a8;
       margin-bottom: 30px;
+
+      a {
+        color: #8fd9a8;
+      }
     }
 
     .copyright {

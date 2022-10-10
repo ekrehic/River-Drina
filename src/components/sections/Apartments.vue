@@ -136,6 +136,7 @@ class Apartments extends Vue {
           require('@/assets/images/gallery/apartment-1/3.jpg'),
           require('@/assets/images/gallery/apartment-1/4.jpg'),
           require('@/assets/images/gallery/apartment-1/5.jpg'),
+          require('@/assets/images/gallery/apartment-1/6.jpg'),
         ],
         capacity: {
           img: require('@/assets/images/apartments/capacity_4.png'),
@@ -189,6 +190,7 @@ class Apartments extends Vue {
           require('@/assets/images/gallery/apartment-2/3.jpg'),
           require('@/assets/images/gallery/apartment-2/4.jpg'),
           require('@/assets/images/gallery/apartment-2/5.jpg'),
+          require('@/assets/images/gallery/apartment-2/6.jpg'),
           require('@/assets/images/gallery/apartment-2/7.jpg'),
         ],
         capacity: {
@@ -243,6 +245,7 @@ class Apartments extends Vue {
           require('@/assets/images/gallery/apartment-3/3.jpg'),
           require('@/assets/images/gallery/apartment-3/4.jpg'),
           require('@/assets/images/gallery/apartment-3/5.jpg'),
+          require('@/assets/images/gallery/apartment-3/6.jpg'),
         ],
         capacity: {
           img: require('@/assets/images/apartments/capacity_2.png'),

@@ -68,7 +68,7 @@ With its wealth, the Drina offers the possibility of boating but also swimming i
         <span class="is-block">The proximity of important cultural destinations will satisfy those who enjoy an active holiday and exploring surroundings where they spend their vacation.</span>`,
     },
     welcome: {
-      text: `Welcome to your perfect vacation!`,
+      text: `Welcome to your <span class="has-text-weight-bold">perfect vacation!</span>`,
     },
     contact: {
         contactUs: `Contact us`,

@@ -45,6 +45,18 @@ h1, h2, h3 {
   }
 }
 
+.has-wave-left {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  @media screen and (max-width: 768px)  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .has-wave-centered {
   display: inline-flex;
   flex-direction: column;

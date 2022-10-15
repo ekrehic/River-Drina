@@ -35,7 +35,7 @@ export default Quote;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("images/wave-white-bg.png");
+  //background-image: url("images/wave-white-bg.png");
   background-size: cover;
   background-position: bottom center;
   padding: 20px 0;
@@ -44,7 +44,7 @@ export default Quote;
     text-align: center;
     color: #4B778D;
     max-width: 800px;
-    line-height: 68px;
+    line-height: 62px;
 
     .text {
       padding-bottom: 15px;

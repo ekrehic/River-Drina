@@ -76,7 +76,7 @@ same kupače, višestruke.</span>`,
         Blizina važnih kulturnih destinacija zadovoljit će i one koji su željni aktivnog odmora i upoznavanja okružja u kojima provode svoj odmor.`,
     },
     welcome: {
-        text: `Dobrodošli na vaš savršeni odmor.`,
+        text: `Dobrodošli na vaš <span class="has-text-weight-bold">savršeni odmor.</span>`,
     },
     contact: {
         contactUs: `Kontaktiraj nas`,

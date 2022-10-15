@@ -11,8 +11,8 @@ export default new VueRouter({
     routes: [
         {
             path: '/',
-            name: 'ComingSoon',
-            component: ComingSoon,
+            name: 'LandingPage',
+            component: LandingPage,
         },
         {
             path: '*',
@@ -21,9 +21,9 @@ export default new VueRouter({
             }
         },
         {
-            path: '/landing-page-draft',
-            name: 'LandingPage',
-            component: LandingPage,
+            path: '/coming-soon',
+            name: 'ComingSoon',
+            component: ComingSoon,
         },
         {
             path: '/about',
